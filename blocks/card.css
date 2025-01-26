@@ -38,10 +38,11 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.4;
 }
 
 .card__like-button:hover {
-  opacity: 0.4;
+  opacity: 1;
 }
 
 @media screen and (max-width: 627px) {
