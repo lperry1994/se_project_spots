@@ -25,4 +25,19 @@ const initialCards = [
   },
 ];
 
-console.log(initialCards);
+const profileEditButton = document.querySelector(".profile__edit-button");
+
+const editModel = document.querySelector("#edit-model");
+
+const editModelCloseButton = editModel.querySelector(".model__close-button");
+
+function openModel() {
+  editModel.classList.add("model_opened");
+}
+
+function closeModel() {
+  editModel.classList.remove("model_opened");
+}
+
+profileEditButton.addEventListener("click", openModel);
+editModelCloseButton.addEventListener("click", closeModel);
