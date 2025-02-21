@@ -25,6 +25,7 @@
   width: 100%;
   box-sizing: border-box;
   position: relative;
+  border-radius: 8px;
 }
 
 .model__close-button {
@@ -68,12 +69,11 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-  opacity: 0.3;
 }
 
 .model__input:hover {
   border: 1px solid #000;
-  opacity: 1;
+  opacity: 0.3;
   cursor: pointer;
 }
 
