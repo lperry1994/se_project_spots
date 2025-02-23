@@ -60,20 +60,20 @@
   font-weight: 500;
   line-height: 17.6px;
   font-size: 16px;
-  color: #21212166;
+  color: #212121b2;
 }
 
 .model__input {
   padding: 16px 12px;
   border-radius: 8px;
-  border: 1px solid #212121 0.4;
+  border: 1px solid #212121b2;
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
 }
 
 .model__input:hover {
-  border: 1px solid #000 1;
+  border: 1px solid #212121;
   cursor: text;
 }
 
