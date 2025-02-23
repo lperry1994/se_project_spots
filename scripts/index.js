@@ -29,11 +29,11 @@ const profileEditButton = document.querySelector(".profile__edit-button");
 const profileName = document.querySelector(".profile__name");
 const profileDescription = document.querySelector(".profile__description");
 
-const editModel = document.querySelector("#edit-model");
-const editFormElement = editModel.querySelector(".model__form");
-const editModelCloseButton = editModel.querySelector(".model__close-button");
-const editModelNameInput = editModel.querySelector("#profile-name-input");
-const editModelDescriptionInput = editModel.querySelector(
+const editModal = document.querySelector("#edit-modal");
+const editFormElement = editModal.querySelector(".modal__form");
+const editModalCloseButton = editModal.querySelector(".modal__close-button");
+const editModalNameInput = editModal.querySelector("#profile-name-input");
+const editModalDescriptionInput = editModal.querySelector(
   "#profile-description-input"
 );
 
@@ -55,25 +55,25 @@ function getCardElement(data) {
   return cardElement;
 }
 
-function openModel() {
-  editModelNameInput.value = profileName.textContent;
-  editModelDescriptionInput.value = profileDescription.textContent;
-  editModel.classList.add("model_opened");
+function openModal() {
+  editModalNameInput.value = profileName.textContent;
+  editModalDescriptionInput.value = profileDescription.textContent;
+  editModal.classList.add("modal_opened");
 }
 
-function closeModel() {
-  editModel.classList.remove("model_opened");
+function closeModal() {
+  editModal.classList.remove("modal_opened");
 }
 
 function handleEditFormSubmit(evt) {
   evt.preventDefault();
-  profileName.textContent = editModelNameInput.value;
-  profileDescription.textContent = editModelDescriptionInput.value;
-  closeModel();
+  profileName.textContent = editModalNameInput.value;
+  profileDescription.textContent = editModalDescriptionInput.value;
+  closeModal();
 }
 
-profileEditButton.addEventListener("click", openModel);
-editModelCloseButton.addEventListener("click", closeModel);
+profileEditButton.addEventListener("click", openModal);
+editModalCloseButton.addEventListener("click", closeModal);
 editFormElement.addEventListener("submit", handleEditFormSubmit);
 
 for (let i = 0; i < initialCards.length; i++) {

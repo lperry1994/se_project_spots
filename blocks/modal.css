@@ -1,4 +1,4 @@
-.model {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -14,11 +14,11 @@
   padding: 0 20px;
 }
 
-.model_opened {
+.modal_opened {
   visibility: visible;
 }
 
-.model__container {
+.modal__container {
   background: #fff;
   padding: 32px 50px;
   max-width: 730px;
@@ -28,7 +28,7 @@
   border-radius: 8px;
 }
 
-.model__close-button {
+.modal__close-button {
   position: absolute;
   top: 32px;
   right: 50px;
@@ -40,19 +40,19 @@
   border: none;
 }
 
-.model__close-button:hover {
+.modal__close-button:hover {
   cursor: pointer;
   opacity: 1;
 }
 
-.model__title {
+.modal__title {
   margin: 0 0 32px;
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
 }
 
-.model__label {
+.modal__label {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -63,7 +63,7 @@
   color: #212121b2;
 }
 
-.model__input {
+.modal__input {
   padding: 16px 12px;
   border-radius: 8px;
   border: 1px solid #212121b2;
@@ -72,12 +72,12 @@
   line-height: 1;
 }
 
-.model__input:hover {
+.modal__input:hover {
   border: 1px solid #212121;
   cursor: text;
 }
 
-.model__submit-button {
+.modal__submit-button {
   width: 156px;
   padding: 18px 0;
   border-radius: 8px;
@@ -89,39 +89,39 @@
   border: none;
 }
 
-.model__submit-button:hover {
+.modal__submit-button:hover {
   cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {
-  .model {
+  .modal {
     padding: 0 10px;
   }
 
-  .model__container {
+  .modal__container {
     padding: 12px;
   }
 
-  .model__close-button {
+  .modal__close-button {
     top: 12px;
     right: 12px;
   }
 
-  .model__title {
+  .modal__title {
     font-size: 20px;
     line-height: 1;
     margin: 10px 0 34px;
   }
 
-  .model__submit-button {
+  .modal__submit-button {
     width: 100%;
   }
 
-  .model__label {
+  .modal__label {
     margin-bottom: 24px;
   }
 
-  .model__input {
+  .modal__input {
     font-size: 16px;
   }
 }
